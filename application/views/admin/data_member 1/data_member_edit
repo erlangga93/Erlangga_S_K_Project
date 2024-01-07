@@ -1,0 +1,60 @@
+<section class="content-header">
+    <h1>
+        Edit Data Member
+    </h1>
+</section>
+
+<section class="content">
+    <div class="box box-primary">
+        <form role="form" action="<?php echo base_url('index.php/admin/data_member/edit/'.$data_member[0]->id_member); ?>" method="post" enctype="multipart/form-data">
+            <div class="box-body">
+                <div class="form-group">
+                    <label>Ubah Nama Member</label>
+                    <input class="form-control" type="text" name="nama_member" value="<?php echo $data_member[0]->nama_member ?>">
+                    <p class="text-red"><?php echo form_error('nama_member');?></p>
+                </div>
+                <!-- <div class="form-group">
+                    <label>Ubah Nama Konsumen</label>
+                    <input class="form-control" type="text" name="nama_konsumen" value="<?php echo $data_member[0]->nama_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('nama_konsumen');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah NIK Konsumen</label>
+                    <input class="form-control" type="text" name="nik_konsumen" value="<?php echo $data_member[0]->nik_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('nik_konsumen');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah Identitas KTP Konsumen</label>
+                    <input class="form-control" type="file" name="selfie_konsumen" value="<?php echo $data_member[0]->selfie_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('selfie_konsumen');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah Pilihan Paket Supplier</label>
+                    <div>
+                        <?php echo form_dropdown('paket_pilihan', $paket_pilihan, $data_member[0]->paket_pilihan)?>
+                    </div>
+                    <p class="text-red"><?php echo form_error('paket_pilihan');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah Email Konsumen</label>
+                    <input class="form-control" type="text" name="email_konsumen" value="<?php echo $data_member[0]->email_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('email_konsumen');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah Kontakt Konsumen</label>
+                    <input class="form-control" type="text" name="kontakt_konsumen" value="<?php echo $data_member[0]->kontakt_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('kontakt_konsumen');?></p>
+                </div>
+                <div class="form-group">
+                    <label>Ubah Password Admin</label>
+                    <input class="form-control" type="text" name="password_konsumen" value="<?php echo $data_member[0]->password_konsumen ?>">
+                    <p class="text-red"><?php echo form_error('password_konsumen');?></p>
+                </div>
+            </div> -->
+            <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Simpan</button>
+                <a href="<?php echo base_url('index.php/admin/data_member') ?>" class="btn btn-primary">Batal</a>
+            </div>
+        </form>
+    </div>
+</section>
